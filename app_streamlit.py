@@ -9,10 +9,10 @@ st.set_page_config(
 
 model = joblib.load("model_klasifikasi_kopi.joblib")
 
-st.title("Klasifikasi Kualitas Kopi")
+st.title("☕ Klasifikasi Kualitas Kopi")
 st.markdown("Klasifikasi kualitas kopi berdasarkan fitur Kadar Kafein, Tingkat Keasaman dan Jenis Proses")
 
-kadar_kafein = st.slider("Kadar Kafein", 50.0, 110.0)
+kadar_kafein = st.slider("Kadar Kafein", 50.0, 200.0, 110.0)
 tingkat_keasaman = st.slider("Tingkat Keasaman", 0.1, 7.0, 5.1)
 jenis_proses = st.pills ("Jenis Proses", ["Natural","Honey","Washed"], default="Natural")
 
